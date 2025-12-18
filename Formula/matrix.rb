@@ -2,9 +2,7 @@ class Matrix < Formula
   desc "Persistent memory system for Claude Code - Learn from past solutions"
   homepage "https://github.com/ojowwalker77/Claude-Matrix"
   url "https://github.com/ojowwalker77/Claude-Matrix/archive/refs/tags/v0.3.0.tar.gz"
-  # TODO: Update SHA256 after creating v0.3.0 release tag
-  # Generate with: curl -L <url> | shasum -a 256
-  sha256 "PLACEHOLDER_SHA256_UPDATE_AFTER_RELEASE"
+  sha256 "d8e3989aee65e0e4ee992541aa6baea81cec5e3bccd0c6075744f1a7c18bd6d5"
   license "MIT"
   head "https://github.com/ojowwalker77/Claude-Matrix.git", branch: "main"
 
