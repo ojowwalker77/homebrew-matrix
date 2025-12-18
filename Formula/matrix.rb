@@ -9,6 +9,11 @@ class Matrix < Formula
   depends_on "oven-sh/bun/bun"
 
   def install
+    # Install shell completions FIRST (before moving files)
+    bash_completion.install "completions/matrix.bash" => "matrix"
+    zsh_completion.install "completions/matrix.zsh" => "_matrix"
+    fish_completion.install "completions/matrix.fish"
+
     # Install source files to libexec
     libexec.install Dir["*"]
 
@@ -26,11 +31,6 @@ class Matrix < Formula
       export MATRIX_DIR="#{libexec}"
       exec bun run "#{libexec}/src/cli.ts" "$@"
     EOS
-
-    # Install shell completions
-    bash_completion.install "completions/matrix.bash" => "matrix"
-    zsh_completion.install "completions/matrix.zsh" => "_matrix"
-    fish_completion.install "completions/matrix.fish"
   end
 
   def post_install
