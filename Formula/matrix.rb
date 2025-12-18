@@ -33,13 +33,8 @@ class Matrix < Formula
     EOS
   end
 
-  def post_install
-    # Run bun install in libexec
-    system "bun", "install", "--cwd", libexec
-
-    ohai "Matrix installed successfully!"
-    ohai "Run 'matrix init' to complete setup"
-  end
+  # post_install removed - matrix init handles dependency installation
+  # This avoids permission issues in Homebrew's sandboxed environment
 
   def caveats
     <<~EOS
