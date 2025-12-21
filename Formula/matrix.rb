@@ -1,8 +1,8 @@
 class Matrix < Formula
   desc "Persistent memory system for Claude Code - Learn from past solutions"
   homepage "https://github.com/ojowwalker77/Claude-Matrix"
-  url "https://github.com/ojowwalker77/Claude-Matrix/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "d8e3989aee65e0e4ee992541aa6baea81cec5e3bccd0c6075744f1a7c18bd6d5"
+  url "https://github.com/ojowwalker77/Claude-Matrix/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "50be54c3c1a392d2ec5697562dc598768172754df539d4821e1676c519b79d59"
   license "MIT"
   head "https://github.com/ojowwalker77/Claude-Matrix.git", branch: "main"
 
